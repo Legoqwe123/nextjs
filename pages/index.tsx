@@ -1,10 +1,16 @@
-import styled from 'styled-components'
+/* eslint-disable import/no-default-export */
+/* eslint-disable filenames/no-index */
 
-const Title = styled.h1`
-  color: red;
-  font-size: 50px;
-`
+import React, { ReactElement } from "react"
 
-export default function Home() {
-  return <Title>My page</Title>
+import { Box } from "../styled-ui/box"
+
+const Home = (): ReactElement => {
+  return (
+    <Box mb={1} bg={"linear"}>
+      <div>Hello index</div>
+    </Box>
+  )
 }
+
+export default Home
